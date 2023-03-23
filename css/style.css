@@ -70,10 +70,61 @@ body {
     height: 120px;
     background-color: rgb(95, 125, 196);
     display: inline-flex;
-    margin: 30px;
+    margin: 25px;
 }
 
 .footer__figure img:hover {
     font-weight: 900;
     background-color: rgb(184, 32, 32);
+}
+/* para movil aplique las siguientes propiedades: */
+@media screen and (max-width: 390px) {
+  * {
+    padding: 3px;
+  }  
+
+  .header__navbar{
+    width: 100%;
+   display: flex;
+   gap: 11px;
+    }
+
+    .header__navbar figure img{
+        width: 30px;
+        margin-left: 1px;
+    }
+
+   .main__section h2 {
+    width: auto;
+    margin-left: auto;
+   } 
+
+   #imgmain img{
+    /* margin-left: auto; */
+    display: flex;
+    margin: auto;
+   }
+
+   #tablemain{
+    margin: auto;
+    width: 100%;
+    margin-top: -21px;
+   }
+
+   .footer{
+    width: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   #footerh2{
+    font-size: 35px;
+    margin: auto;
+   }
+
+   .footer__figure img{
+    margin: 20px;
+   }
+
 }
